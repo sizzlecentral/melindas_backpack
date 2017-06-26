@@ -36,8 +36,6 @@ class Backpack
     # Bring a packed lunch on all weekdays, snacks on the weekend
     if day_of_week != 'saturday' && day_of_week != 'sunday'
       @items << 'packed lunch'
-    elsif false
-      @items << 'snacks'
     end
   end
 
