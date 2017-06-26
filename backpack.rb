@@ -15,17 +15,12 @@ class Backpack
     weather = @attributes[:weather]
 
     # Ensure appropriate clothing is added to backpack
+    @items << 'pants'
+    @items << 'shirt'
     if weather == 'rainy'
-      @items << 'pants'
-      @items << 'shirt'
       @items << 'umbrella'
     elsif weather == 'cold'
-      @items << 'pants'
-      @items << 'shirt'
       @items << 'jacket'
-    else
-      @items << 'pants'
-      @items << 'shirt'
     end
   end
 
